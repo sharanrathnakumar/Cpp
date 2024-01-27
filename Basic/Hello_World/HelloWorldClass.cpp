@@ -2,13 +2,16 @@
 using namespace std;
 
 class Main {
-    public:  //Makes sure the members can be accessed outside class
     string s ="Hello World";
+    public:  //Makes sure the members can be accessed outside class
+    void greet() {
+        std::cout << s << endl;
+    }
 };
 
 int main()
 {
     Main obj;
-    cout << obj.s << endl;
+    obj.greet();
     return 0;
 }
